@@ -180,7 +180,7 @@ const FooterMenu = ({
             </>
           )}
         </Box>
-        {!isSiteInfoDisabled && (
+        {/* {!isSiteInfoDisabled && (
           <Box display="block" flexDirection="row">
             <SupportMe></SupportMe>
             <Tooltip
@@ -245,7 +245,7 @@ const FooterMenu = ({
               </span>
             </IconButton>
           </Box>
-        )}
+        )} */}
       </Grid>
     </div>
   );
