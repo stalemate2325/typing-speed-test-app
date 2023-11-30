@@ -819,7 +819,7 @@ const TypeBox = ({
                     </span>
                   </Tooltip>
                 </IconButton>
-                <IconButton
+                {/* <IconButton
                   onClick={() => {
                     reset(countDownConstant, difficulty, CHINESE_MODE, false);
                   }}
@@ -829,7 +829,7 @@ const TypeBox = ({
                       chn
                     </span>
                   </Tooltip>
-                </IconButton>
+                </IconButton> */}
               </Box>
             )}
             {menuEnabled && (

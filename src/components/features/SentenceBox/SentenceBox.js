@@ -401,7 +401,7 @@ const SentenceBox = ({
                       </span>
                     </Tooltip>
                   </IconButton>
-                  <IconButton
+                  {/* <IconButton
                     onClick={() => {
                       reset(sentencesCountConstant, CHINESE_MODE, false);
                     }}
@@ -413,7 +413,7 @@ const SentenceBox = ({
                         chn
                       </span>
                     </Tooltip>
-                  </IconButton>
+                  </IconButton> */}
                 </>
               )}
             </Box>
