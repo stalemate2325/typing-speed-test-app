@@ -389,10 +389,10 @@ const WordsCard = ({ soundType, soundMode }) => {
           onChange={handleInputChange}
           onKeyDown={(e) => handleKeyDown(e)}
         ></input>
-        <div className="wordcard-meaning-display-field">
+        {/* <div className="wordcard-meaning-display-field">
           {currMeaning}
-        </div>
-        <IconButton
+        </div> */}
+        {/* <IconButton
           aria-label="restart"
           color="secondary"
           size="medium"
@@ -400,8 +400,8 @@ const WordsCard = ({ soundType, soundMode }) => {
             playAudio();
           }}
         >
-          <VolumeUpIcon />
-        </IconButton>
+          <VolumeUpIcon/>
+        </IconButton> */}
         <div className="wordcard-word-display-field">
           {currWord.split("").map((char, idx) => (
             <span key={"word" + idx} className={getCharClassName(idx, char)}>
