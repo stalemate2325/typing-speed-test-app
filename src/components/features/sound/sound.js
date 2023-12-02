@@ -20,3 +20,5 @@ const DEFAULT_SOUND_TYPE_KEY = "sound-type";
 const SOUND_MODE_TOOLTIP = "typing sound";
 
 export { soundOptions, DEFAULT_SOUND_TYPE, DEFAULT_SOUND_TYPE_KEY, SOUND_MODE, SOUND_MODE_TOOLTIP, SOUND_MAP };
+
+//comment

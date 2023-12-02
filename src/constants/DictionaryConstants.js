@@ -1,3 +1,4 @@
+//DictrionaryConstants
 import GREWordsInterpretations from "../assets/Vocab/GREWords.json";
 import TOEFLWordsInterpretations from "../assets/Vocab/TOEFLWords.json";
 import CET6WordsInterpretations from "../assets/Vocab/CET6Words.json";

@@ -1,3 +1,4 @@
+//freetypingBox
 import React, { useEffect, useState } from "react";
 import useSound from "use-sound";
 import { SOUND_MAP } from "./sound/sound";

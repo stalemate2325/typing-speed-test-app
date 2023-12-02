@@ -5,7 +5,6 @@ import { GlobalStyles } from "./style/global";
 import TypeBox from "./components/features/TypeBox/TypeBox";
 import SentenceBox from "./components/features/SentenceBox/SentenceBox";
 import Logo from "./components/common/Logo";
-import MusicPlayerSnackbar from "./components/features/MusicPlayer/MusicPlayerSnackbar";
 import FooterMenu from "./components/common/FooterMenu";
 import FreeTypingBox from "./components/features/FreeTypingBox";
 import {
@@ -62,9 +61,6 @@ function App() {
     localStorage.getItem("focused-mode") === "true"
   );
 
-  // musicMode setting
-  const [isMusicMode, setIsMusicMode] = useState(false);
-
   // coffeeMode setting
   const [isCoffeeMode, setIsCoffeeMode] = useState(false);
 
@@ -103,10 +99,6 @@ function App() {
 
   const toggleSoundMode = () => {
     setSoundMode(!soundMode);
-  };
-
-  const toggleMusicMode = () => {
-    setIsMusicMode(!isMusicMode);
   };
 
   const toggleCoffeeMode = () => {
@@ -163,7 +155,6 @@ function App() {
   }, [
     theme,
     isFocusedMode,
-    isMusicMode,
     isCoffeeMode,
     isWordGameMode,
     isSentenceGameMode,
@@ -176,7 +167,7 @@ function App() {
       <>
         <div className="canvas">
           <GlobalStyles />
-          <Logo isFocusedMode={isFocusedMode} isMusicMode={isMusicMode}></Logo>
+          <Logo isFocusedMode={isFocusedMode}></Logo>
           {isWordGameMode && (
             <TypeBox
               textInputRef={textInputRef}
@@ -223,10 +214,8 @@ function App() {
             handleSoundTypeChange={handleSoundTypeChange}
             handleThemeChange={handleThemeChange}
             toggleFocusedMode={toggleFocusedMode}
-            toggleMusicMode={toggleMusicMode}
             toggleCoffeeMode={toggleCoffeeMode}
             isCoffeeMode={isCoffeeMode}
-            isMusicMode={isMusicMode}
             isFocusedMode={isFocusedMode}
             gameMode={gameMode}
             handleGameModeChange={handleGameModeChange}
@@ -235,11 +224,6 @@ function App() {
             isWordsCardMode={isWordsCardMode}
             toggleWordsCardMode={toggleWordsCardMode}
           ></FooterMenu>
-          <MusicPlayerSnackbar
-            isMusicMode={isMusicMode}
-            isFocusedMode={isFocusedMode}
-            onMouseLeave={() => focusTextInput()}
-          ></MusicPlayerSnackbar>
         </div>
       </>
     </ThemeProvider>

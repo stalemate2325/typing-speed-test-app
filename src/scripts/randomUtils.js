@@ -1,3 +1,5 @@
+//random Integer generator
+
 const randomIntFromRange = (min, max) => {
   const minNorm = Math.ceil(min);
   const maxNorm = Math.floor(max);
